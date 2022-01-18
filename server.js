@@ -28,8 +28,8 @@ function getDifferenceInDays(date1, date2) {
 function dateColumn(startDate, endDate) {
     while (startDate < endDate) {
         let date1 = new Date(startDate);
-        startDate = date1.setDate(date1.getDate() + 1);
         dateColumns.push(date1.toLocaleDateString('en-US', { year: '2-digit', month: '2-digit', day: '2-digit' }));
+        startDate = date1.setDate(date1.getDate() + 1);
     }
 }
 // Input here address and page size
